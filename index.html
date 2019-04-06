@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Condensed:400,700" rel="stylesheet">
      <link rel="stylesheet" href="./assets/css/style.css">
@@ -41,17 +42,28 @@
     </div>
 </nav>
     <section class="bodyer">
-   <div class="sidenav">
-  <a href="#about">About</a>
-  <a href="#services">Services</a>
-  <a href="#clients">Clients</a>
-  <a href="#contact">Contact</a>
+  <div class="sidenav">
+  <a href="#">Dashboard</a>
+  <a href="#">Attendance</a>
+  <button class="dropdown-btn">Inventory
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Inward</a>
+    <a href="#">Consumption</a>
+    <a href="#">Closing Stock</a>
+  </div>
+  <a href="#">Site Purchase  </a>
+  <a href="#">Task Monitor</a>
+  <a href="#">Invoice Monitor</a>
+  <a href="#">Employee Data</a> 
+  <a href="#">Dealers List</a>
+  <a href="#">Bills & Receipts</a>
 </div>
    <div class="main">
        <div class="container">
-  <h2>Sidebar</h2>
-  
-           </div>
+   
+        </div>
 </div>
         </section>
  <footer class="footer">
@@ -66,5 +78,22 @@
         
      </ul>
 </footer> 
+    <script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
 </body>
 </html>
