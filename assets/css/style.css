@@ -105,6 +105,57 @@ font-family: 'Muli', sans-serif;
 }
 /*navbar*/
 
+/*sidebar*/
+.sidenav {
+  height: 100%;
+    margin-top:50px;
+  width: 120px;
+    font-family: 'Muli', sans-serif;
+  position: fixed;
+    border:none;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #000000;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*sidebar*/
+
+
+
+/*sections*/
+
+.bodyer
+{
+    margin-top:100px;
+}
+
+
+
 /*footer*/
 .footer {
    position: fixed;
