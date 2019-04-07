@@ -663,5 +663,23 @@ ol, ul {
        font-family: 'Muli', sans-serif;
     color:#000000;
 }
+    
+    .topper
+{
+    margin-top:80px;
+}
+.topper h3
+{
+    font-size:18px;
+    font-weight:600;
+    font-family: 'Muli', sans-serif; 
+     letter-spacing: 0.5px;
+}
+.topper p
+{
+     font-size:14px;
+     font-family: 'Muli', sans-serif; 
+     letter-spacing: 0.5px; 
+}
 }
 /*footer*/
