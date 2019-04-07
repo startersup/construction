@@ -278,6 +278,32 @@ font-family: 'Muli', sans-serif;
     width:100%;
 }
 
+.buttonone {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:18px;
+    font-family: 'Muli', sans-serif; 
+    margin-top:-5px;
+    padding: 12px 28px;
+  cursor: pointer;
+}
+.buttontwo {
+  background-color: #878585; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:16px;
+    font-family: 'Muli', sans-serif; 
+    margin-top:-5px;
+    padding: 8px 24px;
+  cursor: pointer;
+}
 @media screen and (max-width: 450px)
 {
    .main p
