@@ -1,243 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Sri Venkatachalapathy & Co.</title>
+    <title>Sri Venkatachalapathy & Co.</title>
     <link rel="icon" href="../assets/images/logo.png" type="image/gif" sizes="16x16">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="../assets/js/index.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Condensed:400,700" rel="stylesheet">
-     <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Condensed:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container1">
-    <div class="navbar-header">
-       
-		      <div class="mc-header-menu-btn"><i class="fa fa-arrow-left"></i><span class="hidden-sm hidden-xs" style="font-size:22px;"> Back</span></div>
-		      
-      <a class="navbar-brand" id="logo" href="#"><span><img class="logi hidden-sm hidden-xs" src="../assets/images/logo.png"> Sri Venkatachalapathy & Co</span></a>
-    </div>
-        <ul class="nav navbar-nav collapse navbar-collapse navbar-right">
-            <li>        <div class="search">
-          <input type="text" class="form-control searcher" placeholder="Search for anything...">
-        </div></li>
-        <li><a href="#" class="badge1" data-badge="27"><i class="fa fa-bell"></i></a></li>
-             <li class="dropdown">
-          <a  class="dropdown-toggle" data-toggle="dropdown"><div class="inset">
-                  <img src="./assets/images/avatar.png">
-                </div></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Documents</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container1">
+            <div class="navbar-header">
+
+                <div class="mc-header-menu-btn"><a onclick="goBack()"><i class="fa fa-arrow-left"></i><span class="hidden-sm hidden-xs"  style="font-size:22px;"> Back</span></a>
+                </div>
+
+                <a class="navbar-brand" id="logo" href="#"><span><img class="logi hidden-sm hidden-xs" src="../assets/images/logo.png"> Sri Venkatachalapathy & Co</span></a>
+            </div>
+            <ul class="nav navbar-nav collapse navbar-collapse navbar-right">
+                <li>
+                    <div class="search">
+                        <input type="text" class="form-control searcher" placeholder="Search for anything...">
+                    </div>
+                </li>
+                <li><a href="#" class="badge1" data-badge="27"><i class="fa fa-bell"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <div class="inset">
+                            <img src="../assets/images/avatar.png">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Profile</a>
+                        </li>
+                        <li><a href="#">Settings</a>
+                        </li>
+                        <li><a href="#">Documents</a>
+                        </li>
+                        <li><a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
     <section class="bodyer">
-  <div class="sidenav">
-  <a href="#">Dashboard</a>
-  <a href="./attendance">Attendance</a>
-    <button class="dropdown-btn">Company Admin</button>
-              <div class="dropdown-container">
-                  <a href="bookanal.html">Booking Analytics</a>
-                <a href="staffacc.html">Staff Accounts</a>
-                <a href="prolist.html">Provider List</a>
-                <a href="cprofit.html">Company Profit</a>
-                <a href="fchange.html">Fare Changer</a>
-              </div>
-  <a href="#">Site Purchase  </a>
-  <a href="#">Task Monitor</a>
-  <a href="#">Invoice Monitor</a>
-  <a href="#">Employee Data</a> 
-  <a href="#">Dealers List</a>
-  <a href="#">Bills & Receipts</a>
-  <a href="#">Payments</a>
-  <a href="#">Settings</a>
-</div>
-   <div class="main">
-       <div class="container1">
-        <h3>Attendance</h3>
+        <div class="sidenav">
+            <a href="../index.html">Dashboard</a>
+            <a href="/attendance/index.html">Attendance</a>
+            <a href="#">Inward Stock</a>
+            <a href="#">Consumption</a>
+            <a href="#">Closing Stock</a>
+            <a href="#">Site Purchase  </a>
+            <a href="#">Task Monitor</a>
+            <a href="#">Invoice Monitor</a>
+            <a href="#">Employee Data</a> 
+            <a href="#">Dealers List</a>
+            <a href="../bills/">Bills & Receipts</a>
+            <a href="#">Payments</a>
+            <a href="#">Settings</a>
+        </div>
+        <div class="main">
+            <div class="container1">
+                <h3>Bills & Receipts</h3>
                 <div class="card">
                     <br>
-                    <input type="text" id="myInput" class="form-control searchbar" onkeyup="myFunction()" placeholder="Search for Employee..." style="width:30%;margin-bottom:10px;">
-                    <table>
-                        <thead class="header">
-                            <th style="width:10%;">Employee Id</th>
-                            <th style="width:15%;">Employee Name</th>
-                            <th style="width:15%;">Employee Contact</th>
-                            <th style="width:15%;">Employee Email</th>
-                            <th style="width:10%;">Designation</th>
-                            <th style="width:10%;">In Time</th>
-                            <th style="width:10%;">Out Time</th>
-                            <th style="width:5%;">Action</th>
-                        </thead>
-                        <tbody id="myTable">
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Admin Staff</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Site Engineer</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Admin Staff</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Site Engineer</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Admin Staff</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Site Engineer</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Admin Staff</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Site Engineer</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Admin Staff</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>E23456</td>
-                                <td>Venkatesh</td>
-                                <td>+91 7686906968</td>
-                                <td>Venkatesh@gmail.com</td>
-                                <td>Site Engineer</td>
-                                <td>10:00</td>
-                                <td>04:10</td>
-                                <td>
-                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
-                                </td>
-                            </tr>
+                    <div class="row"><br>
+        <div class="col-xs-6">
+ <div id="reportrange" style="background: #fff;cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">  <i class="fa fa-calendar"></i>&nbsp;
+    <span></span> <i class="fa fa-caret-down"></i>
+</div></div> <div class="col-xs-6"><button style="font-size:20px;" class="btn btn-success">Check Bills</button></div></div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="carding">
+                                <img class="docimage" src="../assets/images/res.png" onerror="this.src='../assets/images/docalt.png';" />
+                                <div class="container1 toping">
+                                    <h4><b># Bill 20</b><button style="float:right;" class="btn btn-success">View</button></h4> 
+                                    <p>Cement Stock Bill</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-4">
+                            <div class="carding">
+                                <img class="docimage" src="../assets/images/res2.jpg" onerror="this.src='../assets/images/docalt.png';" />
+                                <div class="container1 toping">
+                                    <h4><b># Bill 21</b><button style="float:right;" class="btn btn-success">View</button></h4> 
+                                    <p>Steel Stock Bill</p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-md-4">
+                            <div class="carding">
+                                <img class="docimage" src="../assets/images/res.png" onerror="this.src='../assets/images/docalt.png';" />
+                                <div class="container1 toping">
+                                    <h4><b># Bill 22</b><button style="float:right;" class="btn btn-success">View</button></h4> 
+                                    <p>Steel Stock Bill</p>
+                                </div>
+                            </div>
+                        </div>
 
-
-                        </tbody>
-                    </table>
-
+                    </div>
+                    <br>
                 </div>
             </div>
         </div>
 
-       <footer class="footer">
-     <div class="inline container1 hidden-xs hidden-sm">
-     <p>Copyrights &copy; Venkateswara Constructions Ltd.</p>
-         </div>
-     <ul>
-         <LI>Bills-Upload</LI>
-     <li>Attendance</li>
-     <li>Inventory</li>
-     <li>Emails</li>
-        
-     </ul>
-</footer> 
     </section>
 
-      <script>
+    <script>
         function goBack() {
             window.history.back();
         }
     </script>
-      <script>
-                                $(document).ready(function(){
-                                  $("#myInput").on("keyup", function() {
-                                    var value = $(this).val().toLowerCase();
-                                    $("#myTable tr").filter(function() {
-                                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                                    });
-                                  });
-                                });
-                                </script>
+    <script type="text/javascript">
+    $(function() {
+    
+        var start = moment().subtract(29, 'days');
+        var end = moment();
+    
+        function cb(start, end) {
+            $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+    
+        $('#reportrange').daterangepicker({
+            startDate: start,
+            endDate: end,
+            ranges: {
+               'Today': [moment(), moment()],
+               'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+               'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+               'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+               'This Month': [moment().startOf('month'), moment().endOf('month')],
+               'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+            }
+        }, cb);
+    
+        cb(start, end);
+    
+    });
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
 </body>
+
 </html>
