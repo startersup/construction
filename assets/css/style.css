@@ -384,7 +384,8 @@ font-family: 'Muli', sans-serif;
   #myTable {
     border-collapse: collapse;
     width: 100%;
-   font-family: 'Muli', sans-serif;
+      max-width:1200px;
+      font-family: 'Muli', sans-serif;
     font-size:14px;
      letter-spacing: 0.2px;
   }
@@ -570,6 +571,38 @@ font-family: 'Muli', sans-serif;
        font-family: 'Muli', sans-serif;
     color:#000000;
 }
+.footy
+{
+  position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+        
+   background-color: #ffffff;
+   color: white;
+    border-top:1px solid #f1f1f1;
+   text-align: center;   
+}
+.footy>ul>li
+{
+  display: inline-block;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+     padding:5px 20px;
+    font-size:14px;
+    font-family: 'Muli', sans-serif;
+    color:#000000;  
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left:-40px;
+}
+.footy>ul>li>i 
+{
+    font-size:25px;
+}
+
 .footer>ul>li
 {
     display: inline-block;
@@ -591,5 +624,15 @@ font-family: 'Muli', sans-serif;
     font-family: 'Muli', sans-serif;
     float: right;
     color: #000000;
-}}
+}
+
+.inline p
+{
+    float:left;
+    padding-top:10px; 
+    font-size:15px;
+       font-family: 'Muli', sans-serif;
+    color:#000000;
+}
+}
 /*footer*/
