@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sri Venkatachalapathy & Co.</title>
+    <link rel="icon" href="../assets/images/logo.png" type="image/gif" sizes="16x16">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+       <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Muli|Roboto+Condensed:400,700" rel="stylesheet">
+     <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container1">
+            <div class="navbar-header">
+
+                <div class="mc-header-menu-btn"><a onclick="goBack()"><i class="fa fa-arrow-left"></i><span class="hidden-sm hidden-xs"  style="font-size:22px;"> Back</span></a>
+                </div>
+
+                <a class="navbar-brand" id="logo" href="#"><span><img class="logi hidden-sm hidden-xs" src="../assets/images/logo.png"> Sri Venkatachalapathy & Co</span></a>
+            </div>
+            <ul class="nav navbar-nav collapse navbar-collapse navbar-right">
+                <li>
+                    <div class="search">
+                        <input type="text" class="form-control searcher" placeholder="Search for anything...">
+                    </div>
+                </li>
+                <li><a href="#" class="badge1" data-badge="27"><i class="fa fa-bell"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown">
+                        <div class="inset">
+                            <img src="../assets/images/avatar.png">
+                        </div>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Profile</a>
+                        </li>
+                        <li><a href="#">Settings</a>
+                        </li>
+                        <li><a href="#">Documents</a>
+                        </li>
+                        <li><a href="#">Logout</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="bodyer">
+       <div class="sidenav">
+  <a href="#">Dashboard</a>
+  <a href="./attendance">Attendance</a>
+    <a href="#">Inward Stock</a>
+    <a href="#">Consumption</a>
+    <a href="#">Closing Stock</a>
+  <a href="#">Site Purchase  </a>
+  <a href="#">Task Monitor</a>
+  <a href="#">Invoice Monitor</a>
+  <a href="#">Employee Data</a> 
+  <a href="#">Dealers List</a>
+  <a href="#">Bills & Receipts</a>
+  <a href="#">Payments</a>
+  <a href="#">Settings</a>
+</div>
+        <div class="main">
+            <div class="container1">
+                <h3>Attendance</h3>
+                <div class="card">
+                    <br>
+                    <input type="text" id="myInput" class="form-control searchbar" onkeyup="myFunction()" placeholder="Search for Employee..." style="width:30%;margin-bottom:10px;">
+                    <table>
+                        <thead class="header">
+                            <th style="width:10%;">Employee Id</th>
+                            <th style="width:15%;">Employee Name</th>
+                            <th style="width:15%;">Employee Contact</th>
+                            <th style="width:15%;">Employee Email</th>
+                            <th style="width:10%;">Designation</th>
+                            <th style="width:10%;">In Time</th>
+                            <th style="width:10%;">Out Time</th>
+                            <th style="width:5%;">Action</th>
+                        </thead>
+                        <tbody id="myTable">
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Admin Staff</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Site Engineer</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Admin Staff</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Site Engineer</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Admin Staff</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Site Engineer</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Admin Staff</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Site Engineer</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Admin Staff</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>E23456</td>
+                                <td>Venkatesh</td>
+                                <td>+91 7686906968</td>
+                                <td>Venkatesh@gmail.com</td>
+                                <td>Site Engineer</td>
+                                <td>10:00</td>
+                                <td>04:10</td>
+                                <td>
+                                    <button data-toggle="modal" data-target="#myModal2" class="btn btn-success">Edit</button>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal right fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                        </button>
+                        <h4 class="modal-title" id="myModalLabel2">Edit Information</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <p>Punch In Time</p>
+                        <input class="form-control" type="text" value="10:00">
+                        <br>
+                        <p>Punch Out Time</p>
+                        <input class="form-control" type="text" value="04:00">
+                        <br>
+                        <p>Remarks</p>
+                        <textarea class="form-control" rows="4" cols="50"></textarea>
+                        <br>
+                        <center>
+                            <button class="btn btn-success">Update</button>
+                        </center>
+                    </div>
+
+                </div>
+                <!-- modal-content -->
+            </div>
+            <!-- modal-dialog -->
+        </div>
+        <!-- modal -->
+
+<footer class="footer">
+     <div class="inline container1 hidden-xs hidden-sm">
+     <p>Copyrights &copy; Venkateswara Constructions Ltd.</p>
+         </div>
+     <ul>
+         <LI>Bills-Upload</LI>
+     <li>Attendance</li>
+     <li>Inventory</li>
+     <li>Emails</li>
+        
+     </ul>
+</footer> 
+   
+      </section>
+    <!--script starts here-->
+                
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+      <script>
+                                $(document).ready(function(){
+                                  $("#myInput").on("keyup", function() {
+                                    var value = $(this).val().toLowerCase();
+                                    $("#myTable tr").filter(function() {
+                                      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                                    });
+                                  });
+                                });
+                                </script>
+    
+     <!--script ends here-->
+          
+</body>
+
+</html>
