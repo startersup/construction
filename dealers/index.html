@@ -18,6 +18,7 @@
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container1">
+            
             <div class="navbar-header">
 
                 <div class="mc-header-menu-btn"><a onclick="goBack()"><i class="fa fa-arrow-left"></i><span class="hidden-sm hidden-xs"  style="font-size:22px;"> Back</span></a>
@@ -71,7 +72,7 @@
 </div>
         <div class="main">
             <div class="container1">
-                <h3>Dealers List</h3>
+              <h3>Dealers List</h3><button  data-toggle="modal" data-target="#myModal2" style="float:right" class="buttontwo">+ Add Dealer</button>
                 <div class="card">
                     <br>
                     <input type="text" id="myInput" class="form-control searchbar" onkeyup="myFunction()" placeholder="Search for Dealers..." style="width:30%;margin-bottom:10px;">
@@ -162,17 +163,20 @@
                     </div>
 
                     <div class="modal-body">
-                        <p>Punch In Time</p>
-                        <input class="form-control" type="text" value="10:00">
+                        <p>Dealer Name</p>
+                        <input class="form-control" type="text" value="">
                         <br>
-                        <p>Punch Out Time</p>
-                        <input class="form-control" type="text" value="04:00">
+                        <p>Dealer Contact</p>
+                        <input class="form-control" type="text" value="">
                         <br>
-                        <p>Remarks</p>
+                         <p>Dealer Email</p>
+                        <input class="form-control" type="email" value="">
+                        <br>
+                        <p>Products</p>
                         <textarea class="form-control" rows="4" cols="50"></textarea>
                         <br>
                         <center>
-                            <button class="btn btn-success">Update</button>
+                            <button class="btn btn-success">Add</button>
                         </center>
                     </div>
 

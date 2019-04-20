@@ -64,13 +64,13 @@ font-family: 'Muli', sans-serif;
 }
 #logo
 {
-    color:#000000;
+    color:#ffffff;
     font-family: 'Muli', sans-serif;
 }
 .navbar-fixed-top
 {
     border:none;
-    background-color:#f0ff00;
+    background-color:#2874F0;
        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);   
 
 }
@@ -81,7 +81,7 @@ font-family: 'Muli', sans-serif;
     font-size:30px;
     float:left;
     cursor: pointer;
-   color:#000000;
+   color:#f4f4f4;
     -webkit-transition: background-color .16s;
     -o-transition: background-color .16s;
     transition: background-color .16s;
@@ -98,13 +98,13 @@ font-family: 'Muli', sans-serif;
 .fa-bell
 {
     font-size:25px; 
-    color:#000000;
+    color:#f4f4f4;
     margin-top:10px;
 }
 .fa-arrow-left
 {
     font-size:25px; 
-    color:#000000;
+    color:#f4f4f4;
     margin-top:10px;
 }
 .nav-right
